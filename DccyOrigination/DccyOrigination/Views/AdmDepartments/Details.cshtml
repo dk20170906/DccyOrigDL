@@ -1,0 +1,66 @@
+﻿@model DccyOrigination.Models.SysManagement.AdmDepartment
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AdmDepartment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DepName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DepName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Guid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Guid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PGuid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PGuid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreateTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsDelete)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsDelete)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TimestampV)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TimestampV)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
